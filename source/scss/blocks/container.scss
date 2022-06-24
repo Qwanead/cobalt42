@@ -1,15 +1,17 @@
 .container {
   margin: 0 auto;
-  width: $sm;
-  padding: 0 20px;
+  width: 100%;
+  max-width: 1328px;
+  padding: 0 64px;
 
-  @media screen and (min-width: $md) {
-    width: $md;
-    padding: 0 40px;
+  @include desktop {
   }
 
-  @media screen and (min-width: $xl) {
-    width: $xl;
-    padding: 0 50px;
+  @include tablet {
+    padding: 0 16px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
   }
 }

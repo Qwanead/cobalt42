@@ -1,9 +1,10 @@
 /* Здесь хранятся все переменные стилей проекта. Указанные ниже переменные приведены в качестве демонстрации. */
 
 // Размеры вьюпорта
-$sm: 320px;
-$md: 768px;
-$xl: 1280px;
+$mobile: 360px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-large: 1200px;
 
 // Цвета
 $black: #000;
@@ -11,4 +12,4 @@ $white: #fff;
 $grey: #ccc;
 
 // Шрифты
-$main-font: "Roboto", "Arial", sans-serif;
+$main-font: "Inter", "Arial", sans-serif;
