@@ -1,16 +1,14 @@
 .container {
-  margin: 0 auto;
   width: 100%;
   max-width: 1328px;
+  margin: 0 auto;
   padding: 0 64px;
 
   @include desktop {
   }
-
   @include tablet {
     padding: 0 16px;
   }
-
   @include mobile {
     padding: 0 16px;
   }
