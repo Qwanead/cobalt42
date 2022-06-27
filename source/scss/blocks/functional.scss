@@ -1,0 +1,228 @@
+.functional__header {
+  width: 600px;
+  margin: 0;
+  margin-bottom: 60px;
+
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+      rgba(16, 111, 250, 0) 100%), #161616;
+
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 100%;
+
+  @include text-gradient-color;
+}
+
+.functional__content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.functional__card {
+  min-height: 560px;
+
+  border: 1px solid rgba(210, 217, 225, 0.2);
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
+}
+
+.functional__sign {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 100px 300px;
+
+  background: linear-gradient(135deg, #FFC83F 0%, #F35B57 100%);
+
+  gap: 24px;
+}
+
+.functional__soon {
+  padding: 6px 19.5px;
+
+  letter-spacing: -0.02em;
+
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 100px;
+
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.functional__icon {
+  width: 96px;
+  height: 96px;
+}
+
+.functional__card-header {
+  margin: 0;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: $white;
+
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.functional__api .functional__card-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.functional__card-header-api {
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(90deg, #2886CA 0%, #433CCA 100%);
+
+  font-size: 128px;
+  font-weight: 600;
+  line-height: 100%;
+
+  @include text-gradient-color;
+}
+
+.functional__api .functional__card-header {
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+
+  @include text-gradient-color;
+}
+
+.functional__export .functional__card-header{
+  align-items: flex-start;
+
+  text-align: start;
+}
+
+.functional__card-text {
+  margin: 0;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 19px;
+  line-height: 125%;
+}
+
+.functional__export .functional__card-text {
+  text-align: start;
+}
+
+.functional__btn {
+  margin-top: auto;
+  padding: 10px 29.5px;
+
+  cursor: pointer;
+  transition: all $transition;
+  letter-spacing: -0.02em;
+
+  color: #142c4e;
+  border: none;
+  border: 1px solid #142c4e;
+  border-radius: 100px;
+  outline: none;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 125%;
+
+  &:hover {
+    color: $white;
+    background-color: #142c4e;
+  }
+}
+
+.functional__row {
+  display: flex;
+
+  gap: 16px;
+}
+
+.functional__api {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 143.5px 18px;
+  padding-bottom: 40px;
+
+  background: rgba(210, 217, 225, 0.4);
+}
+
+.functional__waring {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 128px 18px;
+
+  background: linear-gradient(225deg, #813AF4 0%, #D255C5 100%);
+
+  gap: 24px;
+}
+
+.functional__export {
+  display: flex;
+
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+}
+
+.functional__doc-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.functional__doc-icon {
+  width: 359px;
+  height: 320px;
+}
+
+.functional__export-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+
+  gap: 24px;
+
+  & h3, p {
+    padding-right: 54%;
+  }
+}
+
+.functional__pdf {
+  background: linear-gradient(135deg, #FF815D 0%, #B94CDB 100%);
+
+  @include text-gradient-color;
+}
+
+.functional__excel {
+  background: linear-gradient(160.2deg, #5EE6B9 0%, #2FBDB9 100%);
+
+  @include text-gradient-color;
+}
