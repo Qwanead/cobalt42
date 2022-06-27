@@ -128,11 +128,13 @@
 }
 
 .cards__item--large .cards__feature {
+  margin: 0;
+
   background: linear-gradient(298.68deg,
     rgba(4, 250, 209, 0.6) 0%,
     rgba(4, 250, 209, 0.1) 100%), #106FFA;
+
   @include text-gradient-color;
-  margin: 0;
 }
 
 .cards__item--optimization {
@@ -147,22 +149,28 @@
 }
 
 .cards__item--optimization .cards__header {
+  width: 588px;
   margin: 0;
   margin-top: 40px;
-  width: 588px;
+
   background: linear-gradient(133.74deg,
     rgba(16, 111, 250, 0.4) 0%,
     rgba(16, 111, 250, 0) 100%), #161616;
+
   @include text-gradient-color;
 }
 
 .cards__item--simple .cards__header {
+  align-self: stretch;
+
   margin: 0;
   margin-top: 240px;
   padding: 0 30px;
-  align-self: stretch;
+
   text-align: center;
+
   background: linear-gradient(155.12deg, #2886CA 0%, #433CCA 100%);
+
   @include text-gradient-color;
 }
 
