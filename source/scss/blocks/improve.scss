@@ -1,0 +1,117 @@
+.improve {
+  padding: 200px 0;
+}
+
+// .improve__container {
+
+// }
+
+.improve__header {
+  width: 896px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+  @include text-gradient-color;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+// .improve__content {
+
+// }
+
+.improve__row {
+  display: flex;
+
+  &--middle {
+    border-top: 1px solid rgba(210, 217, 225, 0.5);
+    border-bottom: 1px solid rgba(210, 217, 225, 0.5);
+  }
+}
+
+.improve__item {
+  padding-top: 124px;
+  padding-right: 5px;
+  min-height: 400px;
+
+  &--large {
+    width: 63%;
+    padding-right: 130px;
+  }
+
+  &--small {
+    width: 37%;
+    padding-left: 80px;
+  }
+
+  &--first {
+    border-right: 1px solid rgba(232, 236, 240, 1);
+    border-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(232, 236, 240, 1)
+    ) 1 100%;
+  }
+
+  &--middle {
+    border-left: 1px solid rgba(210, 217, 225, 0.5);
+  }
+
+  &--last {
+    border-right: 1px solid rgba(210, 217, 225, 0.5);
+    border-image:
+    linear-gradient(
+      to bottom,
+      rgba(232, 236, 240, 1),
+      rgba(255, 255, 255, 0.8)
+    ) 1 100%;
+  }
+}
+
+.improve__row--middle .improve__item{
+  &--large {
+    padding-left: 80px;
+  }
+
+  &--small {
+    padding-left: 0;
+    padding-right: 130px;
+  }
+}
+
+
+.improve__item-header {
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.improve__item--large .improve__item-header {
+  font-size: 44px;
+  background: linear-gradient(90deg, #2886CA 0%, #433CCA 100%);
+  @include text-gradient-color;
+}
+
+.improve__item--small .improve__item-header {
+  font-size: 24px;
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+  @include text-gradient-color;
+}
+
+.improve__item-text {
+  margin: 0;
+  font-size: 19px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #A1A9B4;
+}
