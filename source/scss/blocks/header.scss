@@ -1,34 +1,41 @@
 .header {
-  background-color: $white;
-  margin: 0;
-  width: 100%;
-  min-height: 72px;
-  color: $white;
   display: flex;
   align-items: center;
+
+  width: 100%;
+  min-height: 72px;
+  margin: 0;
+
+  color: $white;
+  background-color: $white;
 }
 
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav-list {
-  list-style: none;
+  display: flex;
+  align-items: center;
+
   margin: 0;
   padding: 0;
-  display: flex;
+
+  list-style: none;
+
   gap: 32px;
-  align-items: center;
 }
 
 .header__nav-item a {
+  transition: all $transition;
+  letter-spacing: -0.02em;
+
+  color: #A1A9B4;
+
   font-size: 16px;
   line-height: 125%;
-  letter-spacing: -0.02em;
-  color: #A1A9B4;
-  transition: all $transition;
 
   &:hover {
     color: #3662ca;

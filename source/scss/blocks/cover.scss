@@ -1,0 +1,51 @@
+// .cover {}
+.cover__container {
+  min-height: 800px;
+  margin-top: 80px;
+  padding-top: 60px;
+
+  background-image: url(../img/circles-desktop@1x.webp);
+  background-repeat: no-repeat;
+  background-position: 0 right;
+  background-size: contain;
+
+  @include retina {
+    background-image: url(../img/circles-desktop@2x.webp);
+  }
+}
+
+.cover__header {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  letter-spacing: -0.03em;
+
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+
+  font-size: 108px;
+  font-weight: 600;
+  line-height: 96%;
+
+  @include text-gradient-color;
+}
+
+.cover__callback {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.cover__callback-text {
+  width: 148px;
+
+  letter-spacing: -0.02em;
+
+  color: #A1A9B4;
+
+  font-size: 16px;
+  line-height: 125%;
+}

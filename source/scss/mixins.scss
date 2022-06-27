@@ -16,6 +16,12 @@
   }
 }
 
+@mixin retina {
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
 @mixin text-gradient-color {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
