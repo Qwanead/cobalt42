@@ -2,80 +2,85 @@
   padding-top: 200px;
 }
 
-// .partners__container {}
-
 .partners__item__header {
+  width: 774px;
   margin: 0;
   margin-bottom: 60px;
-  width: 774px;
-  font-weight: 600;
-  font-size: 80px;
-  line-height: 100%;
+
   letter-spacing: -0.02em;
+
   background: linear-gradient(133.74deg,
     rgba(16, 111, 250, 0.4) 0%,
     rgba(16, 111, 250, 0) 100%), #161616;
+
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 100%;
+
   @include text-gradient-color;
 }
 
 .partners__list {
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+
+  padding: 0;
+
+  list-style: none;
 }
 
 .partners__item {
-  margin: 0;
   width: 400px;
   height: 400px;
+  margin: 0;
+
   border: 1px solid rgba(210, 217, 225, 0.4);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
 
   &--gazprom {
-    background-image: url(../img/partner-gazprom@1x.png);
+    background-image: url(../img/partner-gazprom@1x.webp);
     background-size: 281px 234px;
 
     @include retina {
-      background-image: url(../img/partner-gazprom@2x.png);
+      background-image: url(../img/partner-gazprom@2x.webp);
     }
   }
 
   &--eurochem {
-    background-image: url(../img/partner-eurochem@1x.png);
+    background-image: url(../img/partner-eurochem@1x.webp);
     background-size: 279px 232px;
 
     @include retina {
-      background-image: url(../img/partner-eurochem@2x.png);
+      background-image: url(../img/partner-eurochem@2x.webp);
     }
   }
 
   &--rusal {
-    background-image: url(../img/partner-rusal@1x.png);
+    background-image: url(../img/partner-rusal@1x.webp);
     background-size: 281px 234px;
 
     @include retina {
-      background-image: url(../img/partner-rusal@2x.png);
+      background-image: url(../img/partner-rusal@2x.webp);
     }
   }
 
   &--pts {
-    background-image: url(../img/partner-pts@1x.png);
+    background-image: url(../img/partner-pts@1x.webp);
     background-size: 281px 234px;
 
     @include retina {
-      background-image: url(../img/partner-pts@2x.png);
+      background-image: url(../img/partner-pts@2x.webp);
     }
   }
 
   &--aacsb {
-    background-image: url(../img/partner-aacsb@1x.png);
+    background-image: url(../img/partner-aacsb@1x.webp);
     background-size: 279px 232px;
 
     @include retina {
-      background-image: url(../img/partner-aacsb@2x.png);
+      background-image: url(../img/partner-aacsb@2x.webp);
     }
   }
 }
@@ -84,8 +89,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  letter-spacing: -0.02em;
+
+  color: #A1A9B4;
+
   font-size: 16px;
   line-height: 125%;
-  letter-spacing: -0.02em;
-  color: #A1A9B4;
 }

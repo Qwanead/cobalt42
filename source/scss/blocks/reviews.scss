@@ -1,0 +1,162 @@
+// .reviews {}
+
+// .reviews__container {}
+
+.reviews__header {
+  width: 650px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 100%;
+
+  @include text-gradient-color;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+
+  padding: 80px;
+
+  border: 1px solid rgba(210, 217, 225, 0.2);
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
+
+  gap: 82px;
+}
+
+.reviews__quotation {
+  align-self: flex-start;
+
+  width: 40px;
+  height: 40px;
+}
+
+.reviews__text {
+  margin: 0;
+
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 100%;
+
+  @include text-gradient-color;
+}
+
+.reviews__persons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__current-person {
+  display: flex;
+
+  gap: 18px;
+}
+
+.reviews__avatar {
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid $white;
+  border: 2px solid $white;
+  border-radius: 50%;
+  background-size: contain;
+
+  &--harasov {
+    background-image: url(../img/avatar-harasov@1x.webp);
+
+    @include retina {
+    background-image: url(../img/avatar-harasov@2x.webp);
+    }
+  }
+
+  &--harasov2 {
+    background-image: url(../img/avatar-harasov2@1x.webp);
+
+    @include retina {
+    background-image: url(../img/avatar-harasov2@2x.webp);
+    }
+  }
+}
+
+.reviews__person-text {
+  display: flex;
+  flex-direction: column;
+
+  width: 352px;
+}
+
+.reviews__person-name {
+  margin: 0;
+
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+
+  font-size: 19px;
+  line-height: 125%;
+
+    @include text-gradient-color;
+}
+
+.reviews__person-position {
+  margin: 0;
+
+  letter-spacing: -0.02em;
+
+  color: #A1A9B4;
+
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.reviews__other-avatars {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reviews__avatar-wrapper {
+  border-radius: 50%;
+  background-color: $white;
+
+  &--last {
+    margin-left: -30px;
+
+    transform: translateX(50%);
+  }
+
+  & .reviews__avatar {
+    cursor: pointer;
+    transition: all $transition;
+
+    opacity: 0.5;
+  }
+
+  & .reviews__avatar:hover {
+    opacity: 1;
+  }
+}
