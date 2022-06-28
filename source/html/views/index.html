@@ -26,18 +26,20 @@
 </head>
 <body>
 <!--header.html-->
-<%= _.template(require('../includes/common/header.html').default)({version: htmlWebpackPlugin.options.custom.version,}) %>
+<%= _.template(require('../includes/common/header.html').default)({}) %>
 <main>
   <!--index/cover.html-->
-  <%= _.template(require('../includes/index/cover.html').default)({}) %>
+  <!-- <%= _.template(require('../includes/index/cover.html').default)({}) %> -->
   <!--index/cards.html-->
-  <%= _.template(require('../includes/index/cards.html').default)({}) %>
+  <!-- <%= _.template(require('../includes/index/cards.html').default)({}) %> -->
   <!-- index/indicators.html -->
-  <%= _.template(require('../includes/index/indicators.html').default)({}) %>
+  <!-- <%= _.template(require('../includes/index/indicators.html').default)({}) %> -->
   <!-- index/improve.html -->
-  <%= _.template(require('../includes/index/improve.html').default)({}) %>
+  <!-- <%= _.template(require('../includes/index/improve.html').default)({}) %> -->
   <!-- index/functional.html -->
-  <%= _.template(require('../includes/index/functional.html').default)({}) %>
+  <!-- <%= _.template(require('../includes/index/functional.html').default)({}) %> -->
+  <!-- index/partners.html -->
+  <%= _.template(require('../includes/index/partners.html').default)({}) %>
 </main>
 <!--footer.html-->
 <%= _.template(require('../includes/common/footer.html').default)({}) %>

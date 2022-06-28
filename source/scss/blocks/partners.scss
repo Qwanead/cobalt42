@@ -1,0 +1,91 @@
+.partners {
+  padding-top: 200px;
+}
+
+// .partners__container {}
+
+.partners__item__header {
+  margin: 0;
+  margin-bottom: 60px;
+  width: 774px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  background: linear-gradient(133.74deg,
+    rgba(16, 111, 250, 0.4) 0%,
+    rgba(16, 111, 250, 0) 100%), #161616;
+  @include text-gradient-color;
+}
+
+.partners__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  margin: 0;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(210, 217, 225, 0.4);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--gazprom {
+    background-image: url(../img/partner-gazprom@1x.png);
+    background-size: 281px 234px;
+
+    @include retina {
+      background-image: url(../img/partner-gazprom@2x.png);
+    }
+  }
+
+  &--eurochem {
+    background-image: url(../img/partner-eurochem@1x.png);
+    background-size: 279px 232px;
+
+    @include retina {
+      background-image: url(../img/partner-eurochem@2x.png);
+    }
+  }
+
+  &--rusal {
+    background-image: url(../img/partner-rusal@1x.png);
+    background-size: 281px 234px;
+
+    @include retina {
+      background-image: url(../img/partner-rusal@2x.png);
+    }
+  }
+
+  &--pts {
+    background-image: url(../img/partner-pts@1x.png);
+    background-size: 281px 234px;
+
+    @include retina {
+      background-image: url(../img/partner-pts@2x.png);
+    }
+  }
+
+  &--aacsb {
+    background-image: url(../img/partner-aacsb@1x.png);
+    background-size: 279px 232px;
+
+    @include retina {
+      background-image: url(../img/partner-aacsb@2x.png);
+    }
+  }
+}
+
+.partners__item--show-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #A1A9B4;
+}

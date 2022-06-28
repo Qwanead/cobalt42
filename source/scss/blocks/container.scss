@@ -6,9 +6,11 @@
 
   @include desktop {
   }
+
   @include tablet {
     padding: 0 16px;
   }
+
   @include mobile {
     padding: 0 16px;
   }
