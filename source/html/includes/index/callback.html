@@ -1,0 +1,90 @@
+<section class="callback">
+  <div class="container callback__container">
+    <h2 class="callback__header">
+      Ответим <br> на ваши вопросы
+    </h2>
+
+    <div class="callback__cards">
+      <p class="callback__text">
+        Оставьте<br>
+        свои контакты<br>
+        и мы перезвоним в течение 15 минут
+      </p>
+
+      <form
+        class="callback__form"
+        method="post"
+        action="https://echo.htmlacademy.ru"
+      >
+        <img
+          class="callback__icon"
+          src="../img/phone.svg"
+          alt="Заполните форму"
+          width="24"
+          height="24"
+        >
+
+        <div class="callback__form-wrapper">
+          <div class="input">
+            <label class="input__label" for="name-id">Как вас зовут</label>
+            <input
+              class="input__field"
+              type="text"
+              name="name"
+              id="name-id"
+              placeholder="Имя Фамилия"
+              maxlength="20"
+              required
+            >
+          </div>
+
+          <div class="input">
+            <label class="input__label" for="tel-id">Ваш номер телефона</label>
+            <input
+              class="input__field"
+              type="tel"
+              name="tel"
+              id="tel-id"
+              placeholder="+7 (000) 000-00-00"
+              pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+              required
+            >
+          </div>
+
+          <div class="input">
+            <label class="input__label" for="company-id">Из какой вы компании</label>
+            <input
+              class="input__field"
+              type="text"
+              name="company"
+              id="company-id"
+              placeholder="Название компании"
+              maxlength="20"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="callback__button-wrapper">
+          <button type="submit" class="btn">
+            <div class="btn__bg1"></div>
+            <div class="btn__bg2"></div>
+            <span class="btn__text">Перезвоните мне</span>
+          </button>
+
+          <div class="callback__privacy">
+            <p class="callback__privacy-text">
+              Оставляя заявку, вы соглашаетесь с
+              <a class="callback__link" href="/">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <a class="footer__link" href="/">Политика конфиденциальности</a>
+      <span class="footer__date">©<%= new Date().getFullYear() %> Cobalt</span>
+    </footer>
+  </div>
+</section>

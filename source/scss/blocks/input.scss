@@ -1,0 +1,34 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  height: 68px;
+}
+
+.input__label,
+.input__field,
+.input__field::placeholder {
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.input__field {
+  display:inline;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(210, 217, 225, 0.1);
+  padding: 0;
+  padding-bottom: 20px;
+  outline: none;
+
+  &--invalid {
+    border-bottom: 1px solid #F4395B;
+  }
+}
+
+.input__field::placeholder {
+  color: rgba(210, 217, 225, 0.2);
+  opacity: 1;
+}

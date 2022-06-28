@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 56px;
+  border-top: 1px solid rgba(210, 217, 225, 0.1);
+}
+
+.footer__link, .footer__date {
+  letter-spacing: -0.02em;
+
+  color: rgba(210, 217, 225, 0.5);
+
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
