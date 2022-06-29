@@ -6,8 +6,8 @@
 
   background-image: url(../img/circles-desktop@1x.webp);
   background-repeat: no-repeat;
-  background-position: 0 right;
-  background-size: contain;
+  background-position: right top;
+  background-size: 100% 100%;
 
   @include retina {
     background-image: url(../img/circles-desktop@2x.webp);

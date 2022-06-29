@@ -26,17 +26,20 @@
 }
 
 .improve__item {
-  padding-top: 124px;
   padding-right: 5px;
   min-height: 400px;
+  display: flex;
+  align-items: center;
 
   &--large {
-    width: 63%;
-    padding-right: 130px;
+    flex-shrink: 0;
+    width: 63.4%;
+    padding-right: 200px;
   }
 
   &--small {
-    width: 37%;
+    // padding-top: 133px;
+    width: 100%;
     padding-left: 80px;
   }
 

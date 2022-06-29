@@ -1,7 +1,7 @@
 .functional__header {
   width: 600px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 
   letter-spacing: -0.02em;
 
@@ -36,7 +36,7 @@
   align-items: center;
   flex-direction: column;
 
-  padding: 100px 300px;
+  padding: 100px 300px 90px;
 
   background: linear-gradient(135deg, #FFC83F 0%, #F35B57 100%);
 
@@ -72,6 +72,10 @@
   font-size: 56px;
   font-weight: 600;
   line-height: 100%;
+}
+
+.functional__sign .functional__card-header {
+  width: 400px;
 }
 
 .functional__api .functional__card-header {
@@ -124,6 +128,10 @@
   text-align: start;
 }
 
+.functional__waring .functional__card-text {
+  padding: 0 30px;
+}
+
 .functional__btn {
   margin-top: auto;
   padding: 10px 29.5px;
@@ -172,7 +180,7 @@
   flex-direction: column;
 
   width: 100%;
-  padding: 128px 18px;
+  padding: 128px 18px 110px;
 
   background: linear-gradient(225deg, #813AF4 0%, #D255C5 100%);
 
@@ -201,6 +209,7 @@
 }
 
 .functional__export-content {
+  padding-left: 16px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

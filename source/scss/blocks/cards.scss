@@ -19,7 +19,6 @@
   position: relative;
 
   overflow: hidden;
-  flex-shrink: 0;
 
   min-height: 720px;
   padding: 40px;
@@ -29,11 +28,12 @@
   box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
 
   &--small {
-    width: 37%;
+    flex-shrink: 0;
+    width: 36.75%;
   }
 
   &--large {
-    width: 62%;
+    width: 100%;
   }
 }
 
@@ -86,6 +86,7 @@
 }
 
 .cards__feature {
+  margin: 0;
   letter-spacing: -0.02em;
 
   color: $white;
@@ -140,8 +141,8 @@
 .cards__item--optimization {
   background-image: url(../img/example-desktop@1x.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  background-position: right bottom;
+  background-size: 97% 64%;
 
   @include retina {
     background-image: url(../img/example-desktop@2x.png);
@@ -162,10 +163,15 @@
 
 .cards__item--simple .cards__header {
   align-self: stretch;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
 
   margin: 0;
   margin-top: 240px;
   padding: 0 30px;
+  padding-bottom: 5px;
 
   text-align: center;
 
@@ -175,6 +181,9 @@
 }
 
 .cards__item--universality {
+  & .cards__btn:hover {
+    color: #d35fad;
+  }
   & .cards__bg1 {
     background: linear-gradient(135deg, #FF815D 0%, #B94CDB 100%);
   }
