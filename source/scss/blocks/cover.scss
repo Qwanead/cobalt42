@@ -1,13 +1,12 @@
 // .cover {}
 .cover__container {
   min-height: 800px;
-  margin-top: 80px;
-  padding-top: 60px;
+  padding-top: 140px;
 
   background-image: url(../img/circles-desktop@1x.webp);
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 100% 100%;
+  background-size: contain;
 
   @include retina {
     background-image: url(../img/circles-desktop@2x.webp);
