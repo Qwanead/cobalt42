@@ -1,8 +1,13 @@
+const isProd = process.env.NODE_ENV === 'production';
+
+const link = '/api/order';
+const url = isProd ? link : `http://localhost:8000${link}`;
+
 function sendData() {
   const XHR = new XMLHttpRequest();
   const data = new FormData( form );
 
-  XHR.open( "POST", "http://localhost:8000/api/order" );
+  XHR.open( "POST", url );
 
   XHR.send( data );
 
