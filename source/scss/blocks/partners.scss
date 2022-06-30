@@ -1,9 +1,13 @@
 .partners {
   padding-top: 200px;
+
+  @include tablet {
+    padding-top: 120px;
+  }
 }
 
 .partners__item__header {
-  width: 774px;
+  max-width: 774px;
   margin: 0;
   margin-bottom: 60px;
 
@@ -18,6 +22,13 @@
   line-height: 100%;
 
   @include text-gradient-color;
+  @include tablet {
+    max-width: 374px;
+    margin-bottom: 40px;
+
+    font-size: 41px;
+    line-height: 107%;
+  }
 }
 
 .partners__list {
@@ -44,6 +55,10 @@
     width: 298.67px;
     height: 298.67px;
   }
+  @include tablet {
+    width: 368px;
+    height: 368px;
+  }
 
   &--gazprom {
     background-image: url(../img/partner-gazprom@1x.webp);
@@ -52,8 +67,10 @@
     @include retina {
       background-image: url(../img/partner-gazprom@2x.webp);
     }
-
     @include desktop {
+      background-size: 187.33px 156px;
+    }
+    @include tablet {
       background-size: 187.33px 156px;
     }
   }
@@ -65,8 +82,10 @@
     @include retina {
       background-image: url(../img/partner-eurochem@2x.webp);
     }
-
     @include desktop {
+      background-size: 186px 154.67px;
+    }
+    @include tablet {
       background-size: 186px 154.67px;
     }
   }
@@ -78,8 +97,10 @@
     @include retina {
       background-image: url(../img/partner-rusal@2x.webp);
     }
-
     @include desktop {
+      background-size: 187.33px 156px;
+    }
+    @include tablet {
       background-size: 187.33px 156px;
     }
   }
@@ -91,8 +112,10 @@
     @include retina {
       background-image: url(../img/partner-pts@2x.webp);
     }
-
     @include desktop {
+      background-size: 187.33px 156px;
+    }
+    @include tablet {
       background-size: 187.33px 156px;
     }
   }
@@ -104,8 +127,10 @@
     @include retina {
       background-image: url(../img/partner-aacsb@2x.webp);
     }
-
     @include desktop {
+      background-size: 186px 154.67px;
+    }
+    @include tablet {
       background-size: 186px 154.67px;
     }
   }

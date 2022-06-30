@@ -1,9 +1,14 @@
 .reviews {
   padding: 186px 0 197px;
+
+  @include tablet {
+    padding-top: 106px;
+    padding-bottom: 120px;
+  }
 }
 
 .reviews__header {
-  width: 650px;
+  max-width: 650px;
   margin: 0;
   margin-bottom: 50px;
   padding-bottom: 10px;
@@ -19,6 +24,13 @@
   line-height: 100%;
 
   @include text-gradient-color;
+  @include tablet {
+    max-width: 350px;
+    margin-bottom: 30px;
+
+    font-size: 41px;
+    line-height: 107%;
+  }
 }
 
 .reviews__list {
@@ -39,10 +51,15 @@
   box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
 
   gap: 82px;
-
   @include desktop {
     padding: 64px;
+
     gap: 76px;
+  }
+  @include tablet {
+    padding: 24px;
+
+    gap: 96px;
   }
 }
 
@@ -51,6 +68,11 @@
 
   width: 40px;
   height: 40px;
+
+  @include tablet {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .reviews__text {
@@ -67,6 +89,10 @@
   line-height: 100%;
 
   @include text-gradient-color;
+  @include tablet {
+    font-size: 36px;
+    line-height: 105%;
+  }
 }
 
 .reviews__persons {
@@ -78,6 +104,9 @@
   display: flex;
 
   gap: 18px;
+  @include tablet {
+    gap: 10px;
+  }
 }
 
 .reviews__avatar {
@@ -88,6 +117,11 @@
   border: 2px solid $white;
   border-radius: 50%;
   background-size: contain;
+
+  @include tablet {
+    width: 54px;
+    height: 54px;
+  }
 
   &--harasov {
     background-image: url(../img/avatar-harasov@1x.webp);
@@ -110,7 +144,11 @@
   display: flex;
   flex-direction: column;
 
-  width: 352px;
+  max-width: 352px;
+
+  @include tablet {
+    max-width: 252px;
+  }
 }
 
 .reviews__person-name {
@@ -125,7 +163,11 @@
   font-size: 19px;
   line-height: 125%;
 
-    @include text-gradient-color;
+  @include text-gradient-color;
+  @include tablet {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .reviews__person-position {
@@ -137,6 +179,11 @@
 
   font-size: 16px;
   line-height: 125%;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 125%;
+  }
 }
 
 .reviews__other-avatars {

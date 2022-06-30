@@ -1,5 +1,5 @@
 .functional__header {
-  width: 600px;
+  max-width: 600px;
   margin: 0;
   margin-bottom: 58px;
 
@@ -14,11 +14,18 @@
   line-height: 100%;
 
   @include text-gradient-color;
+  @include tablet {
+    max-width: 400px;
+    margin-bottom: 40px;
+
+    font-size: 41px;
+    line-height: 107%;
+  }
 }
 
 .functional__content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   gap: 16px;
 }
@@ -29,6 +36,10 @@
   border: 1px solid rgba(210, 217, 225, 0.2);
   border-radius: 16px;
   box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
+
+  @include tablet {
+    min-height: 480px;
+  }
 }
 
 .functional__sign {
@@ -41,9 +52,12 @@
   background: linear-gradient(135deg, #FFC83F 0%, #F35B57 100%);
 
   gap: 24px;
-
   @include desktop {
     padding: 100px 150px 90px;
+  }
+  @include tablet {
+    width: calc(50% - 8px);
+    padding: 90px 57px;
   }
 }
 
@@ -58,11 +72,21 @@
 
   font-size: 16px;
   line-height: 125%;
+
+  @include tablet {
+    font-size: 10px;
+    line-height: 120%;
+  }
 }
 
 .functional__icon {
   width: 96px;
   height: 96px;
+
+  @include tablet {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .functional__card-header {
@@ -76,10 +100,15 @@
   font-size: 56px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 115%;
+  }
 }
 
 .functional__sign .functional__card-header {
-  width: 400px;
+  max-width: 400px;
 }
 
 .functional__api .functional__card-header {
@@ -92,8 +121,9 @@
 
 .functional__waring .functional__card-header {
   @include desktop {
-    font-size: 44px;
     letter-spacing: -0.02em;
+
+    font-size: 44px;
   }
 }
 
@@ -107,6 +137,9 @@
   line-height: 100%;
 
   @include text-gradient-color;
+  @include tablet {
+    font-size: 96px;
+  }
 }
 
 .functional__api .functional__card-header {
@@ -121,6 +154,11 @@
   align-items: flex-start;
 
   text-align: start;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 105%;
+  }
 }
 
 .functional__card-text {
@@ -133,6 +171,10 @@
 
   font-size: 19px;
   line-height: 125%;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .functional__export .functional__card-text {
@@ -141,6 +183,10 @@
 
 .functional__waring .functional__card-text {
   padding: 0 30px;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .functional__btn {
@@ -161,16 +207,16 @@
   font-size: 16px;
   line-height: 125%;
 
+  @include tablet {
+    padding: 10px 22.5px;
+
+    font-size: 14px;
+  }
+
   &:hover {
     color: $white;
     background-color: #142c4e;
   }
-}
-
-.functional__row {
-  display: flex;
-
-  gap: 16px;
 }
 
 .functional__api {
@@ -178,11 +224,15 @@
   align-items: center;
   flex-direction: column;
 
-  width: 100%;
+  width: calc(50% - 8px);
   padding: 143.5px 18px;
   padding-bottom: 40px;
 
   background: rgba(210, 217, 225, 0.4);
+
+  @include tablet {
+    padding: 127.5px 18px 74px;
+  }
 }
 
 .functional__waring {
@@ -190,7 +240,7 @@
   align-items: center;
   flex-direction: column;
 
-  width: 100%;
+  width: calc(50% - 8px);
   padding: 128px 18px 110px;
 
   background: linear-gradient(225deg, #813AF4 0%, #D255C5 100%);
@@ -201,9 +251,22 @@
 .functional__export {
   display: flex;
 
+  width: 100%;
+
   background: linear-gradient(133.74deg,
     rgba(16, 111, 250, 0.4) 0%,
     rgba(16, 111, 250, 0) 100%), #161616;
+
+  @include tablet {
+    flex-direction: column;
+
+    width: calc(50% - 8px);
+    padding-top: 52.83px;
+
+    gap: 38px;
+
+    // justify-content: center;
+  }
 }
 
 .functional__doc-icon-wrapper {
@@ -215,27 +278,54 @@
 }
 
 .functional__doc-icon {
+  width: 291.33px;
+  height: 281.83px;
   margin-top: 18px;
   margin-right: 10px;
 
-  width: 291.33px;
-  height: 281.83px;
+  @include tablet {
+    width: 153.33px;
+    height: 148.33px;
+    margin: 0;
+  }
 }
 
 .functional__export-content {
-  padding-left: 16px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
 
   width: 100%;
+  padding-left: 16px;
 
   gap: 24px;
+  @include tablet {
+    align-items: center;
 
-  & h3, p {
-    padding-right: 53%;
+    padding-left: 0;
+
+    gap: 16px;
   }
+
+  & .functional__export-header,
+  & .functional__export-text {
+    padding-right: 53%;
+
+    @include tablet {
+      max-width: 190px;
+      padding-right: 0;
+
+      text-align: center;
+    }
+  }
+
+  & .functional__export-header {
+    @include tablet {
+      max-width: 174px;
+    }
+  }
+
 }
 
 .functional__pdf {

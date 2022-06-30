@@ -1,5 +1,9 @@
 .cards {
   padding-bottom: 200px;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
 }
 
 .cards__container {
@@ -27,12 +31,25 @@
   border-radius: 16px;
   box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
 
+  @include tablet {
+    min-height: 480px;
+    padding: 24px;
+    padding-right: 15px;
+  }
+
   &--small {
     flex-shrink: 0;
+
     width: 36.75%;
 
     @include desktop {
       flex-shrink: 1;
+
+      width: 100%;
+    }
+    @include tablet {
+      flex-shrink: 1;
+
       width: 100%;
     }
   }
@@ -92,12 +109,17 @@
 
 .cards__feature {
   margin: 0;
+
   letter-spacing: -0.02em;
 
   color: $white;
 
   font-size: 19px;
   line-height: 125%;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .cards__header {
@@ -108,6 +130,13 @@
   font-size: 44px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    letter-spacing: -0.02em;
+
+    font-size: 28px;
+    line-height: 115%;
+  }
 }
 
 .cards__btn {
@@ -126,6 +155,14 @@
 
   font-size: 16px;
   line-height: 125%;
+
+  @include tablet {
+    padding: 10px 24.5px;
+
+    letter-spacing: -0.02em;
+
+    font-size: 14px;
+  }
 
   &:hover {
     color: #3662ca;
@@ -152,13 +189,20 @@
   @include retina {
     background-image: url(../img/example-desktop@2x.png);
   }
-
   @include desktop {
     background-image: url(../img/example-desktop-s@1x.png);
     background-size: 94.5% 51.5%;
 
     @include retina {
       background-image: url(../img/example-desktop-s@2x.png);
+    }
+  }
+  @include tablet {
+    background-image: url(../img/example-tablet@1x.png);
+    background-size: 97.5% 57.5%;
+
+    @include retina {
+      background-image: url(../img/example-tablet@2x.png);
     }
   }
 }
@@ -173,18 +217,16 @@
     rgba(16, 111, 250, 0) 100%), #161616;
 
   @include text-gradient-color;
-
   @include desktop {
+    width: auto;
+  }
+  @include tablet {
     width: auto;
   }
 }
 
 .cards__item--simple .cards__header {
   align-self: stretch;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
 
   margin: 0;
   margin-top: 240px;
@@ -192,14 +234,24 @@
   padding-bottom: 5px;
 
   text-align: center;
+  letter-spacing: -0.02em;
 
   background: linear-gradient(155.12deg, #2886CA 0%, #433CCA 100%);
 
-  @include text-gradient-color;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 100%;
 
+  @include text-gradient-color;
   @include desktop {
-  margin-top: 185px;
-  padding: 0;
+    margin-top: 185px;
+    padding: 0;
+  }
+  @include tablet {
+    margin-top: 118px;
+
+    font-size: 36px;
+    line-height: 105%;
   }
 }
 
