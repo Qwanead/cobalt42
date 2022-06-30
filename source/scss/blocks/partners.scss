@@ -23,6 +23,7 @@
 .partners__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   padding: 0;
 
@@ -39,12 +40,21 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @include desktop {
+    width: 298.67px;
+    height: 298.67px;
+  }
+
   &--gazprom {
     background-image: url(../img/partner-gazprom@1x.webp);
     background-size: 281px 234px;
 
     @include retina {
       background-image: url(../img/partner-gazprom@2x.webp);
+    }
+
+    @include desktop {
+      background-size: 187.33px 156px;
     }
   }
 
@@ -55,6 +65,10 @@
     @include retina {
       background-image: url(../img/partner-eurochem@2x.webp);
     }
+
+    @include desktop {
+      background-size: 186px 154.67px;
+    }
   }
 
   &--rusal {
@@ -63,6 +77,10 @@
 
     @include retina {
       background-image: url(../img/partner-rusal@2x.webp);
+    }
+
+    @include desktop {
+      background-size: 187.33px 156px;
     }
   }
 
@@ -73,6 +91,10 @@
     @include retina {
       background-image: url(../img/partner-pts@2x.webp);
     }
+
+    @include desktop {
+      background-size: 187.33px 156px;
+    }
   }
 
   &--aacsb {
@@ -81,6 +103,10 @@
 
     @include retina {
       background-image: url(../img/partner-aacsb@2x.webp);
+    }
+
+    @include desktop {
+      background-size: 186px 154.67px;
     }
   }
 }

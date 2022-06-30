@@ -30,6 +30,11 @@
   &--small {
     flex-shrink: 0;
     width: 36.75%;
+
+    @include desktop {
+      flex-shrink: 1;
+      width: 100%;
+    }
   }
 
   &--large {
@@ -147,6 +152,15 @@
   @include retina {
     background-image: url(../img/example-desktop@2x.png);
   }
+
+  @include desktop {
+    background-image: url(../img/example-desktop-s@1x.png);
+    background-size: 94.5% 51.5%;
+
+    @include retina {
+      background-image: url(../img/example-desktop-s@2x.png);
+    }
+  }
 }
 
 .cards__item--optimization .cards__header {
@@ -159,6 +173,10 @@
     rgba(16, 111, 250, 0) 100%), #161616;
 
   @include text-gradient-color;
+
+  @include desktop {
+    width: auto;
+  }
 }
 
 .cards__item--simple .cards__header {
@@ -178,6 +196,11 @@
   background: linear-gradient(155.12deg, #2886CA 0%, #433CCA 100%);
 
   @include text-gradient-color;
+
+  @include desktop {
+  margin-top: 185px;
+  padding: 0;
+  }
 }
 
 .cards__item--universality {

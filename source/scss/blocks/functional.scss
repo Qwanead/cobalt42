@@ -41,6 +41,10 @@
   background: linear-gradient(135deg, #FFC83F 0%, #F35B57 100%);
 
   gap: 24px;
+
+  @include desktop {
+    padding: 100px 150px 90px;
+  }
 }
 
 .functional__soon {
@@ -84,6 +88,13 @@
   flex-direction: column;
 
   gap: 16px;
+}
+
+.functional__waring .functional__card-header {
+  @include desktop {
+    font-size: 44px;
+    letter-spacing: -0.02em;
+  }
 }
 
 .functional__card-header-api {
@@ -204,8 +215,11 @@
 }
 
 .functional__doc-icon {
-  width: 359px;
-  height: 320px;
+  margin-top: 18px;
+  margin-right: 10px;
+
+  width: 291.33px;
+  height: 281.83px;
 }
 
 .functional__export-content {
@@ -220,7 +234,7 @@
   gap: 24px;
 
   & h3, p {
-    padding-right: 54%;
+    padding-right: 53%;
   }
 }
 

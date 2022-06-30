@@ -12,6 +12,14 @@
   @include retina {
     background-image: url(../img/circles-desktop@2x.webp);
   }
+
+  @include desktop {
+    background-image: url(../img/circles-desktop-s@1x.webp);
+
+    @include retina {
+      background-image: url(../img/circles-desktop-s@2x.webp);
+    }
+  }
 }
 
 .cover__header {

@@ -39,6 +39,11 @@
   box-shadow: 0px 0px 16px rgba(0, 55, 136, 0.08);
 
   gap: 82px;
+
+  @include desktop {
+    padding: 64px;
+    gap: 76px;
+  }
 }
 
 .reviews__quotation {

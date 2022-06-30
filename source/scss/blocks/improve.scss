@@ -35,12 +35,21 @@
     flex-shrink: 0;
     width: 63.4%;
     padding-right: 200px;
+
+    @include desktop {
+      width: 66.4%;
+      padding-right: 100px;
+    }
   }
 
   &--small {
     // padding-top: 133px;
     width: 100%;
     padding-left: 80px;
+
+    @include desktop {
+      padding-left: 62px;
+    }
   }
 
   &--first {
@@ -71,11 +80,20 @@
 .improve__row--middle .improve__item{
   &--large {
     padding-left: 80px;
+
+    @include desktop {
+      padding-left: 68px;
+      padding-right: 0px;
+    }
   }
 
   &--small {
     padding-left: 0;
     padding-right: 130px;
+
+    @include desktop {
+      padding-right: 59px;
+    }
   }
 }
 
