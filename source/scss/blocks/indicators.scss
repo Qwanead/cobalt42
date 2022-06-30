@@ -4,6 +4,10 @@
   background: linear-gradient(133.74deg,
     rgba(16, 111, 250, 0.2) 0%,
     rgba(16, 111, 250, 0.02) 100%), #161616;
+
+  @include tablet {
+    padding: 120px 0;
+  }
 }
 
 .indicators__container {
@@ -11,10 +15,13 @@
   flex-direction: column;
 
   gap: 60px;
+  @include tablet {
+    gap: 40px;
+  }
 }
 
 .indicators__header {
-  width: 774px;
+  max-width: 774px;
   margin: 0;
 
   letter-spacing: -0.02em;
@@ -24,6 +31,13 @@
   font-size: 80px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    max-width: 400px;
+
+    font-size: 41px;
+    line-height: 107%;
+  }
 }
 
 .indicators__item {
@@ -31,6 +45,9 @@
   flex-direction: column;
 
   gap: 32px;
+  @include tablet {
+    gap: 24px;
+  }
 }
 
 .indicators__item-content {
@@ -39,6 +56,9 @@
   flex-direction: column;
 
   gap: 16px;
+  @include tablet {
+    gap: 8px;
+  }
 }
 
 .indicators__text {
@@ -49,6 +69,14 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    letter-spacing: -0.02em;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 125%;
+  }
 }
 
 .indicators__number {
@@ -57,6 +85,10 @@
   font-size: 128px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    font-size: 96px;
+  }
 }
 
 .indicators__item--cost .indicators__number {
@@ -67,11 +99,28 @@
 
 .indicators__unit {
   margin-left: 11px;
+
   letter-spacing: -0.02em;
 
   font-size: 80px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 105%;
+  }
+}
+
+.indicators__unit-img {
+  width: 78px;
+  height: 69px;
+  margin-left: 11px;
+
+  @include tablet {
+    width: 36.17px;
+    height: 32px;
+  }
 }
 
 .indicators__lines {
@@ -80,6 +129,9 @@
   flex-direction: column;
 
   gap: 16px;
+  @include tablet {
+    gap: 8px;
+  }
 }
 
 .indicators__line {
@@ -90,6 +142,10 @@
 
   border-radius: 80px;
   background: rgba(210, 217, 225, 0.1);
+
+  @include tablet {
+    height: 12px;
+  }
 }
 
 

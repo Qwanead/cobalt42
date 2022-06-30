@@ -12,12 +12,22 @@
   @include retina {
     background-image: url(../img/circles-desktop@2x.webp);
   }
-
   @include desktop {
     background-image: url(../img/circles-desktop-s@1x.webp);
 
     @include retina {
       background-image: url(../img/circles-desktop-s@2x.webp);
+    }
+  }
+  @include tablet {
+    min-height: 560px;
+    margin-top: 0;
+    padding-top: 67.5px;
+
+    background-image: url(../img/circles-tablet@1x.webp);
+
+    @include retina {
+      background-image: url(../img/circles-tablet@2x.webp);
     }
   }
 }
@@ -38,6 +48,14 @@
   line-height: 96%;
 
   @include text-gradient-color;
+  @include tablet {
+    margin-bottom: 2px;
+
+    letter-spacing: -0.02em;
+
+    font-size: 56px;
+    line-height: 100%;
+  }
 }
 
 .cover__callback {
@@ -56,4 +74,8 @@
 
   font-size: 16px;
   line-height: 125%;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }

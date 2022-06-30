@@ -8,6 +8,10 @@
 
   color: $white;
   background-color: $white;
+
+  @include tablet {
+    min-height: 64px;
+  }
 }
 
 .header__container {
@@ -31,6 +35,9 @@
   list-style: none;
 
   gap: 32px;
+  @include tablet {
+    display: none;
+  }
 }
 
 .header__nav-item a {
@@ -44,5 +51,25 @@
 
   &:hover {
     color: #3662ca;
+  }
+}
+
+.header__menu-btn {
+  display: none;
+
+  width: 32px;
+  height: 32px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-image: url('../img/burger-menu.svg');
+
+  font-size: 0;
+
+  @include tablet {
+    display: block;
   }
 }
