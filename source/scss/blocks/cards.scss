@@ -222,15 +222,17 @@
 .cards__item--optimization {
   background-image: url(../img/example-desktop@1x.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 97% 64%;
+  background-position: 20px bottom;
+  background-size: 721px 461px;
+
 
   @include retina {
     background-image: url(../img/example-desktop@2x.png);
   }
   @include desktop {
     background-image: url(../img/example-desktop-s@1x.png);
-    background-size: 94.5% 51.5%;
+    background-size: 417px 372px;
+    background-position: right bottom;
 
     @include retina {
       background-image: url(../img/example-desktop-s@2x.png);
@@ -238,7 +240,8 @@
   }
   @include tablet {
     background-image: url(../img/example-tablet@1x.png);
-    background-size: 97.5% 57.5%;
+    background-size: 353px 277px;
+    background-position: right bottom;
 
     @include retina {
       background-image: url(../img/example-tablet@2x.png);
@@ -246,7 +249,8 @@
   }
   @include mobile {
     background-image: url(../img/example-mobile@1x.png);
-    background-size: 100.5% 52.5%;
+    background-size: 328px 253px;
+    background-position: right bottom;
 
     @include retina {
       background-image: url(../img/example-mobile@2x.png);
