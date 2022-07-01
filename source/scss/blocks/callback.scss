@@ -217,3 +217,32 @@
     text-decoration: underline;
   }
 }
+
+.callback__form--succes {
+  display: none;
+}
+
+.callback__result {
+  display: none;
+  width: 100%;
+  padding: 40px 40px 20px;
+  border: 1px solid rgba(210, 217, 225, 0.1);
+  border-radius: 16px;
+  background: rgba(210, 217, 225, 0.1);
+}
+
+.callback__form--succes ~ .callback__result--succes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.callback__result-text {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
