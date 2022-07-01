@@ -2,3 +2,4 @@
 
 import './imask';
 import './form';
+import './contacts';
