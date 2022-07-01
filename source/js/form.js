@@ -22,10 +22,17 @@ function sendData() {
   };
 }
 
-const form = document.querySelector('.callback__form');
+const form = document.querySelector('.js-form');
 
 form.addEventListener( "submit", function ( event ) {
   event.preventDefault();
 
   sendData();
+} );
+
+const btn = document.querySelector('.js-btn-ok');
+btn.addEventListener( "click", function ( event ) {
+  event.preventDefault();
+
+  form.classList.remove('callback__form--succes');
 } );
