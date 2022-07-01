@@ -4,6 +4,10 @@
   @include tablet {
     padding-bottom: 120px;
   }
+
+  @include mobile {
+    padding: 80px 0;
+  }
 }
 
 .cards__container {
@@ -17,6 +21,10 @@
   display: flex;
 
   gap: 16px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .cards__item {
@@ -37,6 +45,13 @@
     padding-right: 15px;
   }
 
+  @include mobile {
+    height: 480px;
+    padding: 16px;
+    padding-right: 14px;
+    min-height: 480px;
+  }
+
   &--small {
     flex-shrink: 0;
 
@@ -48,6 +63,12 @@
       width: 100%;
     }
     @include tablet {
+      flex-shrink: 1;
+
+      width: 100%;
+    }
+
+    @include mobile {
       flex-shrink: 1;
 
       width: 100%;
@@ -120,6 +141,9 @@
   @include tablet {
     font-size: 16px;
   }
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .cards__header {
@@ -130,8 +154,15 @@
   font-size: 44px;
   font-weight: 600;
   line-height: 100%;
+  margin: 0;
 
   @include tablet {
+    letter-spacing: -0.02em;
+
+    font-size: 28px;
+    line-height: 115%;
+  }
+  @include mobile {
     letter-spacing: -0.02em;
 
     font-size: 28px;
@@ -157,6 +188,14 @@
   line-height: 125%;
 
   @include tablet {
+    padding: 10px 24.5px;
+
+    letter-spacing: -0.02em;
+
+    font-size: 14px;
+  }
+
+  @include mobile {
     padding: 10px 24.5px;
 
     letter-spacing: -0.02em;
@@ -205,6 +244,14 @@
       background-image: url(../img/example-tablet@2x.png);
     }
   }
+  @include mobile {
+    background-image: url(../img/example-mobile@1x.png);
+    background-size: 100.5% 52.5%;
+
+    @include retina {
+      background-image: url(../img/example-mobile@2x.png);
+    }
+  }
 }
 
 .cards__item--optimization .cards__header {
@@ -221,6 +268,9 @@
     width: auto;
   }
   @include tablet {
+    width: auto;
+  }
+  @include mobile {
     width: auto;
   }
 }
@@ -249,6 +299,12 @@
   }
   @include tablet {
     margin-top: 118px;
+
+    font-size: 36px;
+    line-height: 105%;
+  }
+  @include mobile {
+    margin-top: 126px;
 
     font-size: 36px;
     line-height: 105%;

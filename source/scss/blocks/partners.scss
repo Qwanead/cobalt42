@@ -4,6 +4,9 @@
   @include tablet {
     padding-top: 120px;
   }
+  @include mobile {
+    padding-top: 80px;
+  }
 }
 
 .partners__item__header {
@@ -28,6 +31,13 @@
 
     font-size: 41px;
     line-height: 107%;
+  }
+  @include mobile {
+    max-width: 374px;
+    margin-bottom: 40px;
+
+    font-size: 36px;
+    line-height: 105%;
   }
 }
 
@@ -59,6 +69,10 @@
     width: 368px;
     height: 368px;
   }
+  @include mobile {
+    width: 328px;
+    height: 328px;
+  }
 
   &--gazprom {
     background-image: url(../img/partner-gazprom@1x.webp);
@@ -71,6 +85,9 @@
       background-size: 187.33px 156px;
     }
     @include tablet {
+      background-size: 187.33px 156px;
+    }
+    @include mobile {
       background-size: 187.33px 156px;
     }
   }
@@ -88,6 +105,9 @@
     @include tablet {
       background-size: 186px 154.67px;
     }
+    @include mobile {
+      background-size: 186px 154.67px;
+    }
   }
 
   &--rusal {
@@ -101,6 +121,9 @@
       background-size: 187.33px 156px;
     }
     @include tablet {
+      background-size: 187.33px 156px;
+    }
+    @include mobile {
       background-size: 187.33px 156px;
     }
   }
@@ -118,6 +141,10 @@
     @include tablet {
       background-size: 187.33px 156px;
     }
+    @include mobile {
+      display: none;
+      background-size: 187.33px 156px;
+    }
   }
 
   &--aacsb {
@@ -131,6 +158,10 @@
       background-size: 186px 154.67px;
     }
     @include tablet {
+      background-size: 186px 154.67px;
+    }
+    @include mobile {
+      display: none;
       background-size: 186px 154.67px;
     }
   }
@@ -147,4 +178,9 @@
 
   font-size: 16px;
   line-height: 125%;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 125%;
+  }
 }

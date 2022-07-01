@@ -5,6 +5,10 @@
     padding-top: 106px;
     padding-bottom: 120px;
   }
+  @include mobile {
+    padding-top: 66px;
+    padding-bottom: 80px;
+  }
 }
 
 .reviews__header {
@@ -30,6 +34,13 @@
 
     font-size: 41px;
     line-height: 107%;
+  }
+  @include mobile {
+    max-width: 280px;
+    margin-bottom: 22px;
+
+    font-size: 36px;
+    line-height: 105%;
   }
 }
 
@@ -61,6 +72,11 @@
 
     gap: 96px;
   }
+  @include mobile {
+    padding: 16px;
+
+    gap: 112px;
+  }
 }
 
 .reviews__quotation {
@@ -72,6 +88,10 @@
   @include tablet {
     width: 32px;
     height: 32px;
+  }
+  @include mobile {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -93,6 +113,10 @@
     font-size: 36px;
     line-height: 105%;
   }
+  @include mobile {
+    font-size: 20px;
+    line-height: 120%;
+  }
 }
 
 .reviews__persons {
@@ -107,6 +131,9 @@
   @include tablet {
     gap: 10px;
   }
+  @include mobile {
+    gap: 10px;
+  }
 }
 
 .reviews__avatar {
@@ -117,10 +144,15 @@
   border: 2px solid $white;
   border-radius: 50%;
   background-size: contain;
+  flex-shrink: 0;
 
   @include tablet {
     width: 54px;
     height: 54px;
+  }
+  @include mobile {
+    width: 52px;
+    height: 52px;
   }
 
   &--harasov {
@@ -149,6 +181,10 @@
   @include tablet {
     max-width: 252px;
   }
+  @include mobile {
+    max-width: auto;
+    width: 100%;
+  }
 }
 
 .reviews__person-name {
@@ -168,6 +204,10 @@
     font-size: 16px;
     line-height: 125%;
   }
+  @include mobile {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .reviews__person-position {
@@ -184,11 +224,19 @@
     font-size: 14px;
     line-height: 125%;
   }
+  @include mobile {
+    font-size: 14px;
+    line-height: 125%;
+  }
 }
 
 .reviews__other-avatars {
   display: flex;
   flex-direction: row-reverse;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .reviews__avatar-wrapper {

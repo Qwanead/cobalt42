@@ -8,6 +8,9 @@
   @include tablet {
     padding-top: 120px;
   }
+  @include mobile {
+    padding-top: 80px;
+  }
 }
 
 .callback__header {
@@ -30,6 +33,12 @@
     font-size: 41px;
     line-height: 107%;
   }
+  @include mobile {
+    margin-bottom: 22px;
+
+    font-size: 36px;
+    line-height: 105%;
+  }
 }
 
 .callback__cards {
@@ -41,6 +50,10 @@
   @include tablet {
     margin-bottom: 80px;
   }
+  @include mobile {
+    margin-bottom: 80px;
+    flex-direction: column;
+  }
 }
 
 .callback__text {
@@ -50,9 +63,10 @@
   width: 100%;
   min-height: 560px;
   margin: 0;
-  padding: 20px 34px;
+  padding: 20px 33px;
 
   text-align: center;
+  justify-content: center;
   letter-spacing: -0.02em;
 
   color: $white;
@@ -65,6 +79,12 @@
   line-height: 100%;
 
   @include tablet {
+    min-height: 480px;
+
+    font-size: 28px;
+    line-height: 115%;
+  }
+  @include mobile {
     min-height: 480px;
 
     font-size: 28px;
@@ -94,6 +114,11 @@
 
     gap: 32px;
   }
+  @include mobile {
+    padding: 16px;
+
+    gap: 40px;
+  }
 }
 
 .callback__icon {
@@ -111,6 +136,9 @@
   @include tablet {
     gap: 18px;
   }
+  @include mobile {
+    gap: 18px;
+  }
 }
 
 .callback__button-wrapper {
@@ -123,14 +151,13 @@
   @include tablet {
     flex-direction: column;
   }
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .callback__btn {
   min-width: 288px;
-
-  // @include tablet {
-  //   display: none;
-  // }
 }
 
 .callback__privacy {
@@ -140,6 +167,20 @@
   max-width: 206px;
 
   @include desktop {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: none;
+  }
+  @include tablet {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: none;
+  }
+  @include mobile {
     display: flex;
     justify-content: center;
 
@@ -157,6 +198,15 @@
 
   font-size: 12px;
   line-height: 130%;
+
+  @include tablet {
+    text-align: center;
+    width: 66%;
+  }
+  @include mobile {
+    text-align: center;
+    width: 70%;
+  }
 }
 
 

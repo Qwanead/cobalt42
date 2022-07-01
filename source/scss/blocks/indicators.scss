@@ -8,6 +8,9 @@
   @include tablet {
     padding: 120px 0;
   }
+  @include mobile {
+    padding: 80px 0;
+  }
 }
 
 .indicators__container {
@@ -16,6 +19,9 @@
 
   gap: 60px;
   @include tablet {
+    gap: 40px;
+  }
+  @include mobile {
     gap: 40px;
   }
 }
@@ -38,6 +44,13 @@
     font-size: 41px;
     line-height: 107%;
   }
+
+  @include mobile {
+    max-width: 400px;
+
+    font-size: 36px;
+    line-height: 105%;
+  }
 }
 
 .indicators__item {
@@ -46,6 +59,9 @@
 
   gap: 32px;
   @include tablet {
+    gap: 24px;
+  }
+  @include mobile {
     gap: 24px;
   }
 }
@@ -57,6 +73,9 @@
 
   gap: 16px;
   @include tablet {
+    gap: 8px;
+  }
+  @include mobile {
     gap: 8px;
   }
 }
@@ -77,6 +96,13 @@
     font-weight: 500;
     line-height: 125%;
   }
+  @include mobile {
+    letter-spacing: -0.02em;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 125%;
+  }
 }
 
 .indicators__number {
@@ -87,6 +113,9 @@
   line-height: 100%;
 
   @include tablet {
+    font-size: 96px;
+  }
+  @include mobile {
     font-size: 96px;
   }
 }
@@ -110,6 +139,10 @@
     font-size: 36px;
     line-height: 105%;
   }
+  @include mobile {
+    font-size: 36px;
+    line-height: 105%;
+  }
 }
 
 .indicators__unit-img {
@@ -118,6 +151,10 @@
   margin-left: 11px;
 
   @include tablet {
+    width: 36.17px;
+    height: 32px;
+  }
+  @include mobile {
     width: 36.17px;
     height: 32px;
   }
@@ -132,6 +169,9 @@
   @include tablet {
     gap: 8px;
   }
+  @include mobile {
+    gap: 8px;
+  }
 }
 
 .indicators__line {
@@ -144,6 +184,9 @@
   background: rgba(210, 217, 225, 0.1);
 
   @include tablet {
+    height: 12px;
+  }
+  @include mobile {
     height: 12px;
   }
 }

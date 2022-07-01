@@ -1,12 +1,15 @@
 <header class="header">
   <div class="header__container container">
-    <img
-      src="./img/logo.svg"
-      class="header__logo"
-      alt="Логотип COBALT"
-      width="107"
-      height="20"
-    >
+    <picture>
+      <source type="image/webp" media="(max-width: 767px)" srcset="./img/logo-mobile.svg">
+      <img
+        class="header__logo"
+        alt="Логотип COBALT"
+        width="107"
+        height="20"
+        src="./img/logo.svg"
+      >
+    </picture>
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="/">О сервисе</a></li>

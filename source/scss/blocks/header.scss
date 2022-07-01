@@ -12,6 +12,9 @@
   @include tablet {
     min-height: 64px;
   }
+  @include mobile {
+    min-height: 64px;
+  }
 }
 
 .header__container {
@@ -23,6 +26,11 @@
 .header__logo {
   width: 107.5px;
   height: 20px;
+
+  @include mobile {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .header__nav-list {
@@ -36,6 +44,9 @@
 
   gap: 32px;
   @include tablet {
+    display: none;
+  }
+  @include mobile {
     display: none;
   }
 }
@@ -70,6 +81,9 @@
   font-size: 0;
 
   @include tablet {
+    display: block;
+  }
+  @include mobile {
     display: block;
   }
 }

@@ -6,6 +6,10 @@
   height: 56px;
 
   border-top: 1px solid rgba(210, 217, 225, 0.1);
+
+  @include mobile {
+    height: 52px;
+  }
 }
 
 .footer__link, .footer__date {
@@ -15,6 +19,11 @@
 
   font-size: 12px;
   line-height: 130%;
+
+  @include mobile {
+    font-size: 10px;
+    line-height: 120%;
+  }
 }
 
 .footer__link:hover {
