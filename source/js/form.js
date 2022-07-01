@@ -35,4 +35,5 @@ btn.addEventListener( "click", function ( event ) {
   event.preventDefault();
 
   form.classList.remove('callback__form--succes');
+  form.reset();
 } );
