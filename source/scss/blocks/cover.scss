@@ -1,6 +1,6 @@
 .cover__container {
   min-height: 800px;
-  margin-top: 80px;
+  margin-top: 152px;
   padding-top: 60px;
 
   background-image: url(../img/circles-desktop@1x.webp);
@@ -20,7 +20,7 @@
   }
   @include tablet {
     min-height: 560px;
-    margin-top: 0;
+    margin-top: 64px;
     padding-top: 67.5px;
 
     background-image: url(../img/circles-tablet@1x.webp);
@@ -31,7 +31,7 @@
   }
   @include mobile {
     min-height: auto;
-    margin-top: 54px;
+    margin-top: 118px;
     padding-top: 64px;
 
     background-image: url(../img/circles-mobile@1x.webp);

@@ -1,13 +1,17 @@
 .header {
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 
   width: 100%;
   min-height: 72px;
   margin: 0;
 
   color: $white;
-  background-color: $white;
+  background-color: rgba(255, 255, 255, .9);
+  backdrop-filter: blur(100px);
 
   @include tablet {
     min-height: 64px;
@@ -15,7 +19,13 @@
   @include mobile {
     min-height: 64px;
   }
+  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    background: rgba(210, 217, 225, 0.1);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+  }
 }
+
 
 .header__container {
   display: flex;
