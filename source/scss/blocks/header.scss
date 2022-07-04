@@ -1,9 +1,10 @@
 .header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 2;
 
   width: 100%;
   min-height: 72px;
@@ -11,8 +12,8 @@
 
   color: $white;
   background-color: rgba(255, 255, 255, .9);
-  backdrop-filter: blur(100px);
 
+  backdrop-filter: blur(100px);
   @include tablet {
     min-height: 64px;
   }
@@ -21,6 +22,7 @@
   }
   @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     background: rgba(210, 217, 225, 0.1);
+
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
   }
@@ -54,10 +56,52 @@
 
   gap: 32px;
   @include tablet {
-    display: none;
+    padding: 32px;
+    position: absolute;
+    top: -230px;
+    right: -250px;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 230px;
+    height: 250px;
+
+    transition: all $transition;
+
+    background: linear-gradient(155.12deg, #2886CA 0%, #433CCA 100%);
+    background-color: #fff;
+
+    &--open {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      right: 0;
+    }
   }
   @include mobile {
-    display: none;
+    padding: 32px;
+    position: absolute;
+    top: -230px;
+    right: -250px;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 230px;
+    height: 250px;
+
+    transition: all $transition;
+
+    background: linear-gradient(155.12deg, #2886CA 0%, #433CCA 100%);
+    background-color: #fff;
+
+    &--open {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
@@ -72,6 +116,107 @@
 
   &:hover {
     color: #3662ca;
+  }
+}
+
+.header__btn {
+  min-width: 160px;
+  padding: 6px 16.5px;
+
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.header__btn-mobile {
+  &--callback {
+    display: none;
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    padding: 5px 24px;
+
+    transition: all $transition;
+    letter-spacing: -0.02em;
+
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 100px;
+
+    font-size: 14px;
+    line-height: 125%;
+    cursor: pointer;
+
+    &:hover {
+      color: #3467ca;
+      background-color: white;
+    }
+
+    &--callback {
+      background-color: $white;
+      color: #3467ca;
+
+      &:hover {
+        background-color: transparent;
+        color: $white;
+      }
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    padding: 5px 24px;
+
+    transition: all $transition;
+    letter-spacing: -0.02em;
+
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 100px;
+
+    font-size: 14px;
+    line-height: 125%;
+    cursor: pointer;
+
+    &:hover {
+      color: #3467ca;
+      background-color: white;
+    }
+
+    &--callback {
+      background-color: $white;
+      color: #3467ca;
+
+      &:hover {
+        background-color: transparent;
+        color: $white;
+      }
+    }
+  }
+}
+
+.header__nav-close {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 16px);
+  bottom: 32px;
+
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    display: block;
   }
 }
 
