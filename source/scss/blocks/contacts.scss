@@ -19,6 +19,10 @@
 .contacts__wrapper {
   display: flex;
   gap: 4px;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 .contacts__btn {
@@ -36,6 +40,10 @@
   background-image: url('../img/close.svg');
   background-size: cover;
   cursor: pointer;
+
+  @include mobile {
+    align-self: flex-end;
+  }
 }
 
 .contacts__content-wrapper {
@@ -55,6 +63,13 @@
   flex-direction: column;
   gap: 4px;
   background-color: $white;
+
+  @include tablet {
+    width: 560px;
+  }
+  @include mobile {
+    width: 328px;
+  }
 }
 
 .contacts__city {
@@ -79,6 +94,10 @@
 .contacts__links-wrapper {
   display: flex;
   gap: 8px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .contacts__tel,
