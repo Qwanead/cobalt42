@@ -4,3 +4,4 @@ import './imask';
 import './form';
 import './contacts';
 import './header';
+import './cards';

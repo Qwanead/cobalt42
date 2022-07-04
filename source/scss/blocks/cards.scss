@@ -80,6 +80,32 @@
   }
 }
 
+.cards__item--active {
+  & .cards__feature {
+    font-size: 0;
+  }
+
+  & .cards__header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  & .cards__discription {
+    display: block;
+  }
+
+  & .cards__bg1 {
+    opacity: 0;
+  }
+
+  & .cards__bg2 {
+    opacity: 1;
+  }
+}
+
 .cards__bg1,
 .cards__bg2 {
   position: absolute;
@@ -170,8 +196,18 @@
   }
 }
 
+.cards__discription {
+  display: none;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: $white;
+  margin: 0;
+}
+
 .cards__btn {
   padding: 10px 29.5px;
+  min-width: 160px;
 
   cursor: pointer;
   transition: all $transition;
