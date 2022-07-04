@@ -23,9 +23,12 @@ function sendData() {
 }
 
 const form = document.querySelector('.js-form');
+const btnSend = document.querySelector('.js-btn');
 
 form.addEventListener( "submit", function ( event ) {
   event.preventDefault();
+
+  btnSend.disabled = true;
 
   sendData();
 } );
@@ -35,5 +38,6 @@ btn.addEventListener( "click", function ( event ) {
   event.preventDefault();
 
   form.classList.remove('callback__form--succes');
+  btnSend.disabled = false;
   form.reset();
 } );
