@@ -21,7 +21,7 @@
     min-height: 64px;
   }
   @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    background: rgba(210, 217, 225, 0.1);
+    background: transparent;
 
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
@@ -209,8 +209,8 @@
   display: none;
   cursor: pointer;
   position: absolute;
-  left: calc(50% - 16px);
-  bottom: 32px;
+  top: 16px;
+  right: 16px;
 
   @include tablet {
     display: block;
