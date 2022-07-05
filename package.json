@@ -13,7 +13,8 @@
   "dependencies": {
     "concurrently": "^7.1.0",
     "imask": "^6.4.2",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "swiper": "^8.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",

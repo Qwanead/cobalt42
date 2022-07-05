@@ -25,19 +25,23 @@ function sendData() {
 const form = document.querySelector('.js-form');
 const btnSend = document.querySelector('.js-btn');
 
-form.addEventListener( "submit", function ( event ) {
-  event.preventDefault();
+if (form) {
+  form.addEventListener( "submit", function ( event ) {
+    event.preventDefault();
 
-  btnSend.disabled = true;
+    btnSend.disabled = true;
 
-  sendData();
-} );
+    sendData();
+  } );
+}
 
 const btn = document.querySelector('.js-btn-ok');
-btn.addEventListener( "click", function ( event ) {
-  event.preventDefault();
+if (btn) {
+  btn.addEventListener( "click", function ( event ) {
+    event.preventDefault();
 
-  form.classList.remove('callback__form--succes');
-  btnSend.disabled = false;
-  form.reset();
-} );
+    form.classList.remove('callback__form--succes');
+    btnSend.disabled = false;
+    form.reset();
+  } );
+}

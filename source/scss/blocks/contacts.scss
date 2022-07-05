@@ -89,6 +89,10 @@
   line-height: 125%;
   letter-spacing: -0.02em;
   color: rgba(22, 22, 22, 0.4);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .contacts__links-wrapper {

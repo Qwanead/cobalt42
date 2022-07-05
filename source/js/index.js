@@ -6,3 +6,4 @@ import './contacts';
 import './header';
 import './cards';
 import './animation';
+import './swiper';

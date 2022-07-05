@@ -45,10 +45,7 @@
 }
 
 .reviews__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  padding: 16px;
 }
 
 .reviews__item {
@@ -97,6 +94,7 @@
 
 .reviews__text {
   margin: 0;
+  padding-bottom: 5px;
 
   letter-spacing: -0.02em;
 
@@ -163,11 +161,19 @@
     }
   }
 
-  &--harasov2 {
-    background-image: url(../img/avatar-harasov2@1x.webp);
+  &--konev {
+    background-image: url(../img/avatar-konev@1x.webp);
 
     @include retina {
-    background-image: url(../img/avatar-harasov2@2x.webp);
+    background-image: url(../img/avatar-konev@2x.webp);
+    }
+  }
+
+  &--shubin {
+    background-image: url(../img/avatar-shubin@1x.webp);
+
+    @include retina {
+    background-image: url(../img/avatar-shubin@2x.webp);
     }
   }
 }
@@ -176,10 +182,10 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 352px;
+  max-width: 400px;
 
   @include tablet {
-    max-width: 252px;
+    // max-width: 252px;
   }
   @include mobile {
     max-width: auto;
@@ -242,21 +248,23 @@
 .reviews__avatar-wrapper {
   border-radius: 50%;
   background-color: $white;
+  align-self: flex-start;
 
   &--last {
     margin-left: -30px;
 
     transform: translateX(50%);
+
+    & .reviews__avatar:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
   }
 
   & .reviews__avatar {
-    cursor: pointer;
     transition: all $transition;
 
     opacity: 0.5;
   }
 
-  & .reviews__avatar:hover {
-    opacity: 1;
-  }
 }
