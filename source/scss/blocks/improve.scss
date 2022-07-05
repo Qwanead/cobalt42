@@ -44,6 +44,10 @@
 .improve__row {
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   &--middle {
     border-top: 1px solid rgba(210, 217, 225, 0.5);
     border-bottom: 1px solid rgba(210, 217, 225, 0.5);
@@ -51,10 +55,6 @@
     @include mobile {
       border: none;
     }
-  }
-
-  @include mobile {
-    flex-direction: column;
   }
 }
 
@@ -65,14 +65,22 @@
   min-height: 400px;
   padding-right: 5px;
 
+  transition: all 1s ease-out;
+
+  opacity: 0;
+
   @include tablet {
     min-height: 320px;
   }
-
   @include mobile {
-    padding: 31.5px 0;
     min-height: auto;
+    padding: 31.5px 0;
+
     border-bottom: 1px solid rgba(210, 217, 225, 0.5);
+  }
+
+  &.visible {
+    opacity: 1;
   }
 
   &--large {
@@ -118,6 +126,7 @@
       rgba(255, 255, 255, 0.8),
       rgba(232, 236, 240, 1)
     ) 1 100%;
+
     @include mobile {
       border: none;
       border-bottom: 1px solid rgba(210, 217, 225, 0.5);
@@ -126,6 +135,7 @@
 
   &--middle {
     border-left: 1px solid rgba(210, 217, 225, 0.5);
+
     @include mobile {
       border: none;
       border-bottom: 1px solid rgba(210, 217, 225, 0.5);
@@ -140,6 +150,7 @@
       rgba(232, 236, 240, 1),
       rgba(255, 255, 255, 0.8)
     ) 1 100%;
+
     @include mobile {
       border: none;
       border-bottom: 1px solid rgba(210, 217, 225, 0.5);

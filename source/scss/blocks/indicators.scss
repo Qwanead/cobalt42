@@ -44,7 +44,6 @@
     font-size: 41px;
     line-height: 107%;
   }
-
   @include mobile {
     max-width: 400px;
 
@@ -178,7 +177,7 @@
   width: 100%;
   height: 16px;
 
-  transition: all $transition;
+  transition: all 1s ease-out;
 
   border-radius: 80px;
   background: rgba(210, 217, 225, 0.1);
@@ -193,9 +192,13 @@
 
 
 .indicators__item--cost .indicators__line--prim {
-  width: 50%;
-
   background: linear-gradient(160.2deg, #5EE6B9 0%, #2FBDB9 100%);
+}
+
+.indicators__item--cost .indicators__lines.visible {
+  & .indicators__line--prim {
+    width: 50%;
+  }
 }
 
 .indicators__item--speed .indicators__number {
@@ -205,7 +208,15 @@
 }
 
 .indicators__item--speed .indicators__line--prim {
+  width: 10%;
+
   background: linear-gradient(135deg, #FF815D 0%, #B94CDB 100%);
+}
+
+.indicators__item--speed .indicators__lines.visible {
+  & .indicators__line--prim {
+    width: 100%;
+  }
 }
 
 .indicators__item--speed .indicators__line--sec {

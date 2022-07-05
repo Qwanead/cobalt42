@@ -56,6 +56,9 @@
   height: 400px;
   margin: 0;
 
+  transition: all 1s ease-out;
+
+  opacity: 0;
   border: 1px solid rgba(210, 217, 225, 0.4);
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -72,6 +75,10 @@
   @include mobile {
     width: 328px;
     height: 328px;
+  }
+
+  &.visible {
+    opacity: 1;
   }
 
   &--gazprom {
@@ -143,6 +150,7 @@
     }
     @include mobile {
       display: none;
+
       background-size: 187.33px 156px;
     }
   }
@@ -162,6 +170,7 @@
     }
     @include mobile {
       display: none;
+
       background-size: 186px 154.67px;
     }
   }

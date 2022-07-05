@@ -5,3 +5,4 @@ import './form';
 import './contacts';
 import './header';
 import './cards';
+import './animation';

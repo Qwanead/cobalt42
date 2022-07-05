@@ -15,10 +15,12 @@ const toggleCard = evt => {
   cardBtnEl.addEventListener('click', toggleCard);
 });
 
-functionalBtnEl.addEventListener('click', () => {
-  functionalCardEl.classList.toggle('functional__api--active');
-  const isCardActive = functionalCardEl.classList.contains(
-    'functional__api--active',
-  );
-  functionalBtnEl.textContent = isCardActive ? 'Скрыть -' : 'Подробнее +';
-});
+if (functionalBtnEl) {
+  functionalBtnEl.addEventListener('click', () => {
+    functionalCardEl.classList.toggle('functional__api--active');
+    const isCardActive = functionalCardEl.classList.contains(
+      'functional__api--active',
+    );
+    functionalBtnEl.textContent = isCardActive ? 'Скрыть -' : 'Подробнее +';
+  });
+}
