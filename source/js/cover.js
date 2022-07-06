@@ -13,15 +13,17 @@ const onScroll = scrollY => {
   }
 };
 
-window.addEventListener('scroll', () => {
-  lastKnownScrollPosition = window.scrollY;
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      onScroll(lastKnownScrollPosition);
-      ticking = false;
-    });
-    ticking = true;
-  }
-});
+if (coverEl && cardsEl) {
+  window.addEventListener('scroll', () => {
+    lastKnownScrollPosition = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        onScroll(lastKnownScrollPosition);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
 
-onScroll(window.scrollY);
+  onScroll(window.scrollY);
+}
