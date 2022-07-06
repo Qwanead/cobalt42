@@ -14,6 +14,19 @@
   }
 }
 
+.cards__anchor {
+  position: absolute;
+  left: 0;
+  top: -104px;
+
+  @include tablet {
+    top: -96px;
+  }
+  @include mobile {
+    top: -96px;
+  }
+}
+
 .cards__container {
   display: flex;
   flex-direction: column;
