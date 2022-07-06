@@ -7,7 +7,10 @@ let ticking = false;
 const onScroll = scrollY => {
   const coverHeight = coverEl.offsetHeight;
   if (scrollY !== 0) {
-    coverEl.style.opacity = (coverHeight - scrollY - 104) / coverHeight;
+    coverEl.style.opacity =
+      coverHeight - scrollY - 104 > 0
+        ? (coverHeight - scrollY - 104) / coverHeight
+        : 0;
   } else {
     coverEl.style.opacity = 1;
   }
