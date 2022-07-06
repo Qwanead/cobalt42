@@ -21,8 +21,15 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
   loop: true,
-  spaceBetween: 32,
+  spaceBetween: 4,
   autoHeight: true,
+
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 32,
+    },
+  },
 });
 
 addEventListenerToBtns();

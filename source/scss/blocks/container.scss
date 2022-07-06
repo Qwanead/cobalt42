@@ -12,4 +12,10 @@
   @include mobile {
     padding: 0 16px;
   }
+
+  &--reviews {
+    @include mobile {
+      padding: 0
+    }
+  }
 }
