@@ -44,8 +44,6 @@
 .partners__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
   padding: 0;
 
   list-style: none;
@@ -81,97 +79,54 @@
     opacity: 1;
   }
 
-  &--gazprom {
-    background-image: url(../img/partner-gazprom@1x.webp);
-    background-size: 281px 234px;
+  &--gsi {
+    background-image: url(../img/partner-gsi@1x.webp);
+    background-size: 48.25% 46%;
 
     @include retina {
-      background-image: url(../img/partner-gazprom@2x.webp);
-    }
-    @include desktop {
-      background-size: 187.33px 156px;
-    }
-    @include tablet {
-      background-size: 187.33px 156px;
-    }
-    @include mobile {
-      background-size: 187.33px 156px;
+      background-image: url(../img/partner-gsi@2x.webp);
     }
   }
 
-  &--eurochem {
-    background-image: url(../img/partner-eurochem@1x.webp);
-    background-size: 279px 232px;
+  &--security {
+    background-image: url(../img/partner-security@1x.webp);
+    background-size: 39% 51%;
 
     @include retina {
-      background-image: url(../img/partner-eurochem@2x.webp);
-    }
-    @include desktop {
-      background-size: 186px 154.67px;
-    }
-    @include tablet {
-      background-size: 186px 154.67px;
-    }
-    @include mobile {
-      background-size: 186px 154.67px;
+      background-image: url(../img/partner-security@2x.webp);
     }
   }
 
-  &--rusal {
-    background-image: url(../img/partner-rusal@1x.webp);
-    background-size: 281px 234px;
+  &--cc7 {
+    background-image: url(../img/partner-cc7@1x.webp);
+    background-size: 57.75% 48%;
 
     @include retina {
-      background-image: url(../img/partner-rusal@2x.webp);
-    }
-    @include desktop {
-      background-size: 187.33px 156px;
-    }
-    @include tablet {
-      background-size: 187.33px 156px;
-    }
-    @include mobile {
-      background-size: 187.33px 156px;
-    }
-  }
-
-  &--pts {
-    background-image: url(../img/partner-pts@1x.webp);
-    background-size: 281px 234px;
-
-    @include retina {
-      background-image: url(../img/partner-pts@2x.webp);
-    }
-    @include desktop {
-      background-size: 187.33px 156px;
-    }
-    @include tablet {
-      background-size: 187.33px 156px;
+      background-image: url(../img/partner-cc7@2x.webp);
     }
     @include mobile {
       display: none;
-
-      background-size: 187.33px 156px;
     }
   }
 
-  &--aacsb {
-    background-image: url(../img/partner-aacsb@1x.webp);
-    background-size: 279px 232px;
+  &--ms {
+    background-image: url(../img/partner-ms@1x.webp);
+    background-size: 41% 54.3%;
 
     @include retina {
-      background-image: url(../img/partner-aacsb@2x.webp);
+      background-image: url(../img/partner-ms@2x.webp);
     }
-    @include desktop {
-      background-size: 186px 154.67px;
-    }
-    @include tablet {
-      background-size: 186px 154.67px;
+  }
+
+  &--rhi {
+    background-image: url(../img/partner-rhi@1x.webp);
+    background-size: 81.75% 15%;
+
+    @include retina {
+      background-image: url(../img/partner-rhi@2x.webp);
     }
     @include mobile {
       display: none;
-
-      background-size: 186px 154.67px;
     }
   }
 }
@@ -187,9 +142,29 @@
 
   font-size: 16px;
   line-height: 125%;
+  display: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   @include mobile {
+    display: flex;
     font-size: 14px;
     line-height: 125%;
+  }
+}
+
+.partners__list--show-all {
+  @include mobile {
+    & .partners__item--cc7,
+    & .partners__item--rhi {
+      display: block;
+    }
+
+    & .partners__item--show-all {
+      display: none;
+    }
   }
 }

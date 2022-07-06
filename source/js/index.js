@@ -7,3 +7,4 @@ import './header';
 import './cards';
 import './animation';
 import './swiper';
+import './partners';
