@@ -1,3 +1,10 @@
+.functional {
+  position: relative;
+  z-index: 2;
+
+  background-color: $white;
+}
+
 .functional__header {
   max-width: 600px;
   margin: 0;

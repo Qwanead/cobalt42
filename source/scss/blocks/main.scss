@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  padding-top: 952px;
+
+  @include tablet {
+    padding-top: 624px;
+  }
+  @include mobile {
+    padding-top: 624px;
+  }
+}

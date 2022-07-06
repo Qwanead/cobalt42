@@ -1,5 +1,10 @@
 .partners {
+  position: relative;
+  z-index: 2;
+
   padding-top: 200px;
+
+  background-color: $white;
 
   @include tablet {
     padding-top: 120px;
@@ -45,8 +50,10 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 
   list-style: none;
+  justify-content: center;
 }
 
 .partners__item {

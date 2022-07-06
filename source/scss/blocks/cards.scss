@@ -1,4 +1,8 @@
 .cards {
+  position: relative;
+  z-index: 2;
+
+  position: relative;
   padding-bottom: 200px;
 
   @include tablet {
@@ -77,6 +81,11 @@
 
   &--large {
     width: 100%;
+  }
+
+  &--optimization,
+  &--simple {
+    background-color: $white;
   }
 }
 

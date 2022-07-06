@@ -1,5 +1,10 @@
 .improve {
+  position: relative;
+  z-index: 2;
+
   padding: 200px 0;
+
+  background-color: $white;
 
   @include tablet {
     padding: 120px 0;

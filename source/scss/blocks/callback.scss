@@ -1,4 +1,7 @@
 .callback {
+  position: relative;
+  z-index: 2;
+
   padding-top: 200px;
 
   background: linear-gradient(133.74deg,
@@ -51,14 +54,16 @@
     margin-bottom: 80px;
   }
   @include mobile {
-    margin-bottom: 80px;
     flex-direction: column;
+
+    margin-bottom: 80px;
   }
 }
 
 .callback__text {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   width: 100%;
   min-height: 560px;
@@ -66,7 +71,6 @@
   padding: 20px 33px;
 
   text-align: center;
-  justify-content: center;
   letter-spacing: -0.02em;
 
   color: $white;
@@ -200,12 +204,14 @@
   line-height: 130%;
 
   @include tablet {
-    text-align: center;
     width: 66%;
+
+    text-align: center;
   }
   @include mobile {
-    text-align: center;
     width: 70%;
+
+    text-align: center;
   }
 }
 
@@ -224,8 +230,10 @@
 
 .callback__result {
   display: none;
+
   width: 100%;
   padding: 40px 40px 20px;
+
   border: 1px solid rgba(210, 217, 225, 0.1);
   border-radius: 16px;
   background: rgba(210, 217, 225, 0.1);
@@ -233,18 +241,20 @@
 
 .callback__form--succes ~ .callback__result--succes {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .callback__result-text {
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 100%;
   text-align: center;
   letter-spacing: -0.02em;
+
   color: #FFFFFF;
+
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 100%;
 
   @include tablet {
     font-size: 28px;

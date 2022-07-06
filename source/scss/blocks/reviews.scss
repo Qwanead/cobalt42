@@ -1,12 +1,17 @@
 .reviews {
+  position: relative;
+  z-index: 2;
+
   padding: 186px 0 197px;
 
+  background-color: $white;
+
   @include tablet {
-    padding-top: 106px;
+    padding-top: 120px;
     padding-bottom: 120px;
   }
   @include mobile {
-    padding-top: 66px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 }

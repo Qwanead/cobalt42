@@ -1,3 +1,11 @@
+.cover {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+
+  width: 100%;
+}
+
 .cover__container {
   min-height: 800px;
   margin-top: 152px;
@@ -67,9 +75,10 @@
     line-height: 100%;
   }
   @include mobile {
+    margin-bottom: 105px;
+
     font-size: 41px;
     line-height: 107%;
-    margin-bottom: 105px;
   }
 }
 
@@ -78,7 +87,6 @@
   align-items: center;
 
   gap: 16px;
-
   @include mobile {
     flex-direction: column;
   }
@@ -104,9 +112,11 @@
     font-size: 14px;
   }
   @include mobile {
+    width: 100%;
+
+    text-align: center;
+
     font-size: 12px;
     line-height: 130%;
-    width: 100%;
-    text-align: center;
   }
 }

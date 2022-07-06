@@ -8,3 +8,4 @@ import './cards';
 import './animation';
 import './swiper';
 import './partners';
+import './cover';
