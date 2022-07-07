@@ -8,7 +8,7 @@ if (telephoneEl) {
   telephoneEl.addEventListener('input', function () {
     if (telephoneEl.validity.patternMismatch) {
       telephoneEl.setCustomValidity(
-        'Введите номер телефона в формате: +7 (123) 456-78-90',
+        'Введите номер телефона в формате: +7 (000) 000-00-00',
       );
     } else {
       telephoneEl.setCustomValidity('');

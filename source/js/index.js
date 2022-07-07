@@ -10,3 +10,4 @@ import './swiper';
 import './partners';
 import './cover';
 import './anchors-links';
+import './callback';
