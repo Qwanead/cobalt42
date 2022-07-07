@@ -9,3 +9,4 @@ import './animation';
 import './swiper';
 import './partners';
 import './cover';
+import './anchors-links';
