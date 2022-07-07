@@ -5,13 +5,13 @@ const url = isProd ? link : `http://localhost:8000${link}`;
 
 function sendData() {
   const XHR = new XMLHttpRequest();
-  const data = new FormData( form );
+  const data = new FormData(form);
 
-  XHR.open( "POST", url );
+  XHR.open('POST', url);
 
-  XHR.send( data );
+  XHR.send(data);
 
-  XHR.onload = function() {
+  XHR.onload = function () {
     if (XHR.status != 200) {
       console.log(`Ошибка ${XHR.status}: ${XHR.statusText}`);
       form.classList.add('callback__form--error');
@@ -26,22 +26,22 @@ const form = document.querySelector('.js-form');
 const btnSend = document.querySelector('.js-btn');
 
 if (form) {
-  form.addEventListener( "submit", function ( event ) {
+  form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     btnSend.disabled = true;
 
     sendData();
-  } );
+  });
 }
 
 const btn = document.querySelector('.js-btn-ok');
 if (btn) {
-  btn.addEventListener( "click", function ( event ) {
+  btn.addEventListener('click', function (event) {
     event.preventDefault();
 
     form.classList.remove('callback__form--succes');
     btnSend.disabled = false;
     form.reset();
-  } );
+  });
 }

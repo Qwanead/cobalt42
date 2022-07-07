@@ -138,7 +138,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 1s ease-out;
+  transition: opacity 0.75s ease-out;
 
   display: flex;
   align-items: flex-start;
@@ -185,7 +185,7 @@
 
   font-size: 19px;
   line-height: 125%;
-  transition: opacity 1s ease-out;
+  transition: opacity 0.75s ease-out;
 
   @include tablet {
     font-size: 16px;

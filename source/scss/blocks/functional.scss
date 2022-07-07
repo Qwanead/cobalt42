@@ -280,17 +280,18 @@
 
   background: rgba(210, 217, 225, 0.4);
 
-  &::before {
-    content: "";
-    width: 134px;
-    height: 39px;
-  }
-
   @include tablet {
     padding: 40px 18px 74px;
   }
   @include mobile {
     padding: 40px 18px 74px;
+  }
+
+  &::before {
+    width: 134px;
+    height: 39px;
+
+    content: "";
   }
 }
 
@@ -305,8 +306,8 @@ functional__api-empyty {
 
 .functional__api-wrapper {
   position: relative;
-  width: calc(50% - 8px);
 
+  width: calc(50% - 8px);
   min-height: 560px;
 
   border-radius: 16px;
@@ -322,24 +323,28 @@ functional__api-empyty {
 
 .functional__api-wrapper--active {
   & .functional__api--main {
-    opacity: 0;
     z-index: 0;
+
+    opacity: 0;
   }
 
   & .functional__api--active {
-    opacity: 1;
     z-index: 1;
+
+    opacity: 1;
   }
 }
 
 .functional__api--main,
 .functional__api--active {
-  transition: opacity 1s ease-out;;
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
+  transition: opacity 0.75s ease-out;;
 }
 
 .functional__api--main {
@@ -347,13 +352,15 @@ functional__api-empyty {
 }
 
 .functional__api--active {
-  opacity: 0;
   z-index: 0;
+
+  opacity: 0;
   & .functional__card-header,
   & .functional__card-header-api {
+    letter-spacing: -0.02em;
+
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: -0.02em;
   }
 
   & .functional__card-header {
@@ -362,17 +369,23 @@ functional__api-empyty {
 
   & .functional__card-header-api {
     background: linear-gradient(133.74deg, rgba(16, 111, 250, 0.4) 0%, rgba(16, 111, 250, 0) 100%), #161616;
+
     @include text-gradient-color;
   }
 
   .functional__card-api-discription {
+    display: block;
+
     max-width: 360px;
     margin-top: 16px;
-    display: block;
+
+    letter-spacing: -0.02em;
+
+    background: linear-gradient(133.74deg, rgba(16, 111, 250, 0.4) 0%, rgba(16, 111, 250, 0) 100%), #161616;
+
     font-size: 20px;
     line-height: 120%;
-    letter-spacing: -0.02em;
-    background: linear-gradient(133.74deg, rgba(16, 111, 250, 0.4) 0%, rgba(16, 111, 250, 0) 100%), #161616;
+
     @include text-gradient-color;
   }
 }
@@ -388,7 +401,6 @@ functional__api-empyty {
   background: linear-gradient(225deg, #813AF4 0%, #D255C5 100%);
 
   gap: 24px;
-
   @include mobile {
     width: 100%;
   }
