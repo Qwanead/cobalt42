@@ -1,5 +1,7 @@
 .main {
   position: relative;
+  z-index: 10;
+  background-color: $white;
   padding-top: 952px;
 
   @include tablet {

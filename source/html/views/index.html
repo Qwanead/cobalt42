@@ -24,8 +24,6 @@
   </script>
 </head>
 <body>
-<!--header.html-->
-<%= _.template(require('../includes/common/header.html').default)({}) %>
 <main class="main">
   <!--index/cover.html-->
   <%= _.template(require('../includes/index/cover.html').default)({}) %>
@@ -44,6 +42,8 @@
   <!-- index/callback.html -->
   <%= _.template(require('../includes/index/callback.html').default)({}) %>
 </main>
+<!--header.html-->
+<%= _.template(require('../includes/common/header.html').default)({}) %>
 <!-- index/contacts.html -->
 <%= _.template(require('../includes/common/contacts.html').default)({}) %>
 </body>
