@@ -104,8 +104,68 @@
 
 .cards__item--active {
   & .cards__feature {
-    font-size: 0;
+    opacity: 0;
   }
+
+  & .cards__item-content--main {
+    opacity: 0;
+    z-index: 0;
+  }
+
+  & .cards__item-content--active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.cards__item--profit {
+  & .cards__item-content--main {
+    background: linear-gradient(298.68deg,
+    rgba(4, 250, 209, 0.6) 0%,
+    rgba(4, 250, 209, 0.1) 100%), #106FFA;
+  }
+
+  & .cards__item-content--active {
+    background: linear-gradient(298.68deg,
+    rgba(4, 250, 209, 0.6) 0%,
+    rgba(4, 250, 209, 0.46) 100%), #106FFA;
+  }
+}
+
+.cards__item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-out;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 40px;
+
+  @include tablet {
+    padding: 24px;
+    padding-right: 15px;
+  }
+
+  @include mobile {
+    padding: 16px;
+    padding-right: 14px;
+  }
+}
+
+.cards__item-content--main {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cards__item-content--active {
+  opacity: 0;
+  z-index: 0;
 
   & .cards__header {
     font-weight: 600;
@@ -114,67 +174,6 @@
     letter-spacing: -0.02em;
     margin-bottom: 16px;
   }
-
-  & .cards__discription {
-    display: block;
-  }
-
-  & .cards__bg1 {
-    opacity: 0;
-  }
-
-  & .cards__bg2 {
-    opacity: 1;
-  }
-}
-
-.cards__bg1,
-.cards__bg2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-
-  transition: all $transition;
-
-  background: transparent;
- }
-
-.cards__bg1 {
-  opacity: 1;
-}
-
-.cards__bg2 {
-  opacity: 0;
-}
-
-.cards__item--profit {
-  & .cards__bg1 {
-    background: linear-gradient(298.68deg,
-      rgba(4, 250, 209, 0.6) 0%,
-      rgba(4, 250, 209, 0.1) 100%), #106FFA;
-  }
-
-  & .cards__bg2 {
-    background: linear-gradient(298.68deg,
-      rgba(4, 250, 209, 0.6) 0%,
-      rgba(4, 250, 209, 0.46) 100%), #106FFA;
-  }
-}
-
-.cards__item-content {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
-
-  height: 100%;
 }
 
 .cards__feature {
@@ -186,6 +185,7 @@
 
   font-size: 19px;
   line-height: 125%;
+  transition: opacity 1s ease-out;
 
   @include tablet {
     font-size: 16px;
@@ -220,7 +220,6 @@
 }
 
 .cards__discription {
-  display: none;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -0.02em;
@@ -378,11 +377,11 @@
   & .cards__btn:hover {
     color: #d35fad;
   }
-  & .cards__bg1 {
+  & .cards__item-content--main {
     background: linear-gradient(135deg, #FF815D 0%, #B94CDB 100%);
   }
 
-  & .cards__bg2 {
+  & .cards__item-content--active {
     background: linear-gradient(132.12deg, #FF815D -79.01%, #B94CDB 100%);
   }
 }
