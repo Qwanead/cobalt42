@@ -7,10 +7,9 @@ function sendData() {
   const XHR = new XMLHttpRequest();
   const data = new FormData(form);
 
+  form.classList.add('callback__form--preloader');
   XHR.open('POST', url);
-
   XHR.send(data);
-
   XHR.onload = function () {
     if (XHR.status != 200) {
       console.log(`Ошибка ${XHR.status}: ${XHR.statusText}`);
@@ -19,6 +18,7 @@ function sendData() {
       console.log(`Готово, получили ${XHR.response}`);
       form.classList.add('callback__form--succes');
     }
+    form.classList.remove('callback__form--preloader');
   };
 }
 
@@ -28,9 +28,7 @@ const btnSend = document.querySelector('.js-btn');
 if (form) {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
-
     btnSend.disabled = true;
-
     sendData();
   });
 }
@@ -39,7 +37,6 @@ const btn = document.querySelector('.js-btn-ok');
 if (btn) {
   btn.addEventListener('click', function (event) {
     event.preventDefault();
-
     form.classList.remove('callback__form--succes');
     btnSend.disabled = false;
     form.reset();
