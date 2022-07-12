@@ -176,10 +176,11 @@
   }
 
   &--shubin {
-    background-image: url(../img/avatar-shubin@1x.webp);
+    // background-image: url(../img/avatar-shubin@2x.webp);
+    background-image: url(../img/avatar-placeholder.svg);
 
     @include retina {
-    background-image: url(../img/avatar-shubin@2x.webp);
+    // background-image: url(../img/avatar-shubin@2x.webp);
     }
   }
 }
